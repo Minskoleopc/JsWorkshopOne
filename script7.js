@@ -129,8 +129,38 @@ let names2 = ["sarika","abhisha","shraddha","bimal"]
 let q14 = names2.sort()
 console.log(q14)
 
-// fill()
-
 // slice()
+//               0       1        2        3       4          5
+let fruits2 = ["apple","mango","banana","orange","papaya","chikoo"]
+//              -6        -5    -4         -3         -2       -1
 
-// splice()
+console.log(fruits2.slice(2))
+console.log(fruits2.slice(2,5))
+console.log(fruits2.slice(1,-1))
+console.log(fruits2.slice(-6,-2))
+console.log(fruits2.slice(-1,-3))
+console.log(fruits2.slice(-4))
+
+// fruits2.slice(startIndex)
+// fruits2.slice(startIndex,endIndex(not included))
+
+//splice()
+//              0  1   2  3  4
+let numbersC = [11,22,33,44,55]
+
+// numbersC.pop()
+// numbers.shift()
+//numbersC.splice(startIndex,numberOfElementTobeDeleted)
+//numbersC.splice(startIndex,numberOfElementTobeDeleted,rep1,rep2)
+//numbersC.splice(1,2)
+//numbersC.splice(2,1)
+
+numbersC.splice(1,2,333,444)
+console.log(numbersC)
+//console.log(numbersC)
+
+// fill()
+//           0  1 2  3   4
+let mrks = [11,22,33,44,55]
+mrks.fill('failed',1,4) // last index not included
+console.log(mrks)
